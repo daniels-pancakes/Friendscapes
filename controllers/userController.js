@@ -55,6 +55,7 @@ module.exports = {
       if (!user) {
         return res.status(404).json({ message: 'No user with that ID' });
       }
+    res.json(user);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -70,6 +71,7 @@ module.exports = {
       if (!user) {
         return res.status(404).json({ message: 'No user with that ID' });
       }
+      res.json(`${user.username} has been deleted`);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -87,6 +89,13 @@ module.exports = {
       if (!user) {
         return res.status(404).json({ message: 'No user with that ID' });
       }
+      const friend = await User.findById(req.params.friendId);
+
+      if (!friend) {
+        return res.status(404).json({ message: 'No friend with that ID'});
+      }
+
+    res.json(`${friend.username} added to ${user.username}'s friend list`);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -103,8 +112,12 @@ module.exports = {
       if (!user) {
         return res.status(404).json({ message: 'No user with that ID' });
       }
+      const friend = await User.findById(req.params.friendId);
 
-      res.json({ message: 'Friend has been removed from user.' })
+      if (!friend) {
+        return res.status(404).json({ message: 'No friend with that ID'});
+      }
+      res.json(`${friend.username} has been removed from ${user.username}'s friend list.`)
     } catch (err) {
       res.status(500).json(err);
     }
