@@ -10,6 +10,7 @@ The backend routing and handling for the Friendscapes social media web applicati
 
 - [Installation Instructions](#installation-instructions)
 - [Usage Information](#usage-information)
+- [Video Walkthrough Demonstration](#video-walkthrough-demonstration)
 - [License](#license)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
@@ -22,6 +23,10 @@ Make sure to install all dependencies as they are enumerated in the package.json
 ## Usage Information
 
 For now this is just a demonstration of backend functionality. It can be interfaced with by running node index.js in the root directory to run the sever locally. Later on we can look at deploying this to the web.
+
+## Video Walkthrough Demonstration
+
+[Video Walkthrough Demonstration](https://drive.google.com/file/d/1xbBq9fBwVD5JNPQLQRqNpfXrQp7luFln/view)
 
 ## License
 
