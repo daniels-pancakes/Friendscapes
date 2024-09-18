@@ -8,17 +8,12 @@ The backend routing and handling for the Friendscapes social media web applicati
 
 ## Table of Contents
 
-- [Video Walkthrough](#video-walkthrough)
 - [Installation Instructions](#installation-instructions)
 - [Usage Information](#usage-information)
 - [License](#license)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Questions](#questions)
-
-## Video Walkthrough
-
-![Video Walkthrough](./assets/Friendscapesdemo.mov)
 
 ## Installation Instructions
 
